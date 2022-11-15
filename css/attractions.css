@@ -1,3 +1,9 @@
 .gallery{
     display: grid;
+    grid-template-columns: 1 / span 4;
+    margin: auto;
+    width: 90%;
+    align-items: stretch;
+    justify-content: center;
+    justify-items: center;
 }
