@@ -15,10 +15,10 @@ nav li{
     background-color: pink;
     text-align: center;
     border: 2px solid black;
-    border-radius: 15px;
+    border-radius: 14px;
     display: inline-block;
     padding: 10px;
-    width:18%;
+    width:15%;
     margin:1%;
 }
 
@@ -38,6 +38,20 @@ nav a:hover{
   
 nav a:focus{
     text-decoration: underline;
+}
+/* styling skip to main content link */
+/* .skip a{
+    position: absolute; 
+    top: -40px;
+}
+
+.skip a:focus{
+    position: absolute;
+    top: 20px;
+    animation:forwards;
+} */
+.skip a:visited{
+    color:black;
 }
 
 h1{
