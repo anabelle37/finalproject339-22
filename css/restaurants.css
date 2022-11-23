@@ -18,37 +18,43 @@
 .gallery img:nth-child(8){
     align-content:center;
 }
-
+/*styling the nav*/
 nav li{
     background-color: pink;
     text-align: center;
     border: 2px solid black;
-    border-radius: 14px;
+    border-radius: 15px;
     display: inline-block;
     padding: 10px;
-    width:15%;
+    width:18%;
     margin:1%;
 }
-
 nav a:visited{
     color:black;
 }
-
 nav a{
     color:black;
     text-decoration: none;
     font-weight: bold;
     font-family:"copperplate" ;
 }
-
+nav a:active{
+    color:blue;
+    font-size: larger;
+}
 nav a:hover{
     text-decoration: underline;
 }
-
 nav a:focus{
     text-decoration: underline;
 }
-
+nav li:nth-child(3){
+    background-color: antiquewhite;
+    border: 3px black solid;
+}
+/*styling header titles*/
 h1{
     text-align: center;
+    font-family:"copperplate" ;
+    color: blue;
 }
