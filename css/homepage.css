@@ -1,45 +1,165 @@
 /* styling the nav */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 nav li{
     background-color: pink;
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
-    display: inline-block;
-    padding: 10px;
-    width:18%;
-    margin:1%;
+    padding: 10px; 
+    width:auto;
+    margin:2%;
+    list-style: none;
+} 
+
+nav li:first-child:hover{
+    box-shadow: 10px 5px;
+    width:100px;
 }
+
+nav li:hover{
+    box-shadow: 10px 5px;
+    width:210px;
+}
+
 
 nav a:visited{
     color:black;
 }
-
 nav a{
     color:black;
     text-decoration: none;
     font-weight: bold;
+    font-family:"copperplate" ;
 }
-
+nav a:active{
+    color:blue;
+    font-size: larger;
+}
 nav a:hover{
     text-decoration: underline;
 }
-
 nav a:focus{
     text-decoration: underline;
 }
+nav li:first-child{
+    background-color: antiquewhite;
+    font-size: x-large;
+    border: 3px black solid;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 15px;
+    width:15%;
+} 
 
 /* styling skip to main content link */
 .skip a{
     position: absolute; 
     top: -40px;
 }
-
 .skip a:focus{
     position: absolute;
     top: 20px;
     animation:forwards;
 }
-
+.skip a:visited{
+    color: black;
+}
+/*styling header titles*/
 h1{
     text-align: center;
+    font-family:"copperplate" ;
+    color: blue;
+}
+h2{
+    font-family:"copperplate" ;
+    text-align: center;
+}
+/* styling all images in flex containers */
+.beachpics{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.beachpics img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    flex: 2 1 auto;
+    border: solid 1px white;
+}
+.beachpics img:hover{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 10px white double;
+}
+.restaurantpics{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+.restaurantpics img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    flex: 2 1 auto;
+    border: solid 1px white;
+}
+.restaurantpics img:hover{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 10px white double;
+}
+.attractionspics{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.attractionspics img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    flex: 2 1 auto;
+    border: solid 1px white; 
+}
+.attractionspics img:hover{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 10px white double;
+}
+body{
+    background: linear-gradient(lightblue,pink);
+}
+/*styling footer*/
+footer{
+    text-align: center;
+}
+/*tablet view*/
+@media screen and (min-width:600px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav_links{
+        display: flex;
+    }
+    h2{
+        text-align: left;
+    }
+
 }
