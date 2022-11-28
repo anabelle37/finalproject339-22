@@ -44,7 +44,7 @@ nav a:focus{
 nav li:first-child{
     background-color: antiquewhite;
     font-size: x-large;
-    border: 3px black solid;
+    border: 3px black dashed;
     border-radius: 15px;
     display: inline-block;
     padding: 15px;
@@ -90,8 +90,8 @@ h2{
     border: solid 1px white;
 }
 .beachpics img:hover{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: relative;
     border: 10px white double;
 }
@@ -111,8 +111,8 @@ h2{
     border: solid 1px white;
 }
 .restaurantpics img:hover{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: relative;
     border: 10px white double;
 }
@@ -131,8 +131,8 @@ h2{
     border: solid 1px white; 
 }
 .attractionspics img:hover{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     position: relative;
     border: 10px white double;
 }

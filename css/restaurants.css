@@ -52,7 +52,8 @@ nav a:focus{
 }
 nav li:nth-child(3){
     background-color: antiquewhite;
-    border: 3px black solid;
+    font-size: x-large;
+    border: 3px black dashed;
     border-radius: 15px;
     display: inline-block;
     padding: 15px;
