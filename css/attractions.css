@@ -55,31 +55,26 @@ nav li:nth-child(4){
     width:20%;
     margin:1%;
 }
-
 nav li:hover{
     box-shadow: 10px 5px;
-    width:230px;
-    height:20px;
+    width:100px;
+    height:100px;
 }
-
 nav li:nth-child(4):hover{
     box-shadow: 10px 5px;
     width:250px;
     height:25px;
 }
-
 /* styling skip to main content link */
 .skip a{
     position: absolute; 
     top: -40px;
 }
-
 .skip a:focus{
     position: absolute;
     top: 20px;
     animation:forwards;
 }
-
 .skip a:visited{
     color:black;
 }

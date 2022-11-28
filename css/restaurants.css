@@ -7,19 +7,16 @@
     /* justify-items: stretch; */
     grid-template-rows: 1fr;
 }
-
 .gallery img{
     width: 90%;
     margin: 4.5%;
     justify-self: center;
     align-self: stretch;
 }
-
 .gallery img:hover{
     position: relative;
     border: 10px tan double;
 }
-
 .gallery img:nth-child(8){
     align-content:center;
 }
@@ -62,13 +59,11 @@ nav li:nth-child(3){
     width:20%;
     margin:1%;
 }
-
 nav li:hover{
     box-shadow: 10px 5px;
-    width:230px;
-    height:20px;
+    width:100px;
+    height:100px;
 }
-
 /* styling skip to main content link */
 .skip a{
     position: absolute; 
