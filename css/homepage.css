@@ -68,7 +68,11 @@ nav li:first-child{
 h1{
     text-align: center;
     font-family:"copperplate" ;
-    color: blue;
+    color: transparent;
+    font-size: 50px;
+    background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 h2{
     font-family:"copperplate" ;
@@ -148,8 +152,8 @@ footer{
 @media screen and (min-width:600px){
     header{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        /* flex-direction: row; */
+        justify-content: center;
     }
 
     nav li{
@@ -171,14 +175,59 @@ footer{
     body{
         background: linear-gradient(lightblue,pink);
     }
-
-    nav li:hover{
-        
-    }
-
     nav li:first-child:hover{
         box-shadow: 10px 5px;
         width:220px;
         padding: 10px;
+    }
+}
+@media screen and (min-width:1200px){
+    h2{
+        text-align: center;
+    }
+    .beachpics{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        box-sizing: border-box;
+        justify-content: stretch;
+        width: 100vw;
+        height: 100vh;
+    }
+    .beachpics a{
+        justify-self: center;
+    }
+    .restaurantpics{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        box-sizing: border-box;
+        justify-content: stretch;
+        width: 100vw;
+        height: 100vh;
+    }
+    .restaurantpics a{
+        justify-self: center;
+    }
+    .attractionspics{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        box-sizing: border-box;
+        justify-content: stretch;
+        width: 100vw;
+        height: 100vh;
+    }
+    .attractionspics a{
+        justify-self: center;
+    }
+    header h1{
+        color: transparent;
+        font-size: 60px;
+        background-image: linear-gradient(45deg, #553c9a, #ee4b2b);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }
