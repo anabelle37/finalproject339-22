@@ -4,23 +4,43 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
+ul{
+    padding-inline-start: 0px;
+}
+
 nav li{
-    background-color: pink;
+    background-color: rgb(253, 210, 217);
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
     padding: 15px; 
-    width:200px;
-    margin: 4%;
+    width:175px;
+    margin: 5%;
     list-style: none;
+    transition: background-color 2s ease-out 100ms;
 } 
+
 nav li:hover{
     box-shadow: 5px 5px;
-    width:210px;
+    width:180px;
+    background-color: rgb(254, 120, 142);
 }
+
+nav li:first-child{
+    background-color: antiquewhite;
+    font-size: x-large;
+    border: 6px black double;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 15px;
+    width:175px;
+} 
+
 nav li:first-child:hover{
     box-shadow: 7px 7px;
-    width: 210px;
+    width: 180px;
+    background-color: rgb(249, 208, 150);
 }
 
 nav a:visited{
@@ -34,7 +54,7 @@ nav a{
 }
 nav a:active{
     color:blue;
-    font-size: larger;
+    /* font-size: larger; */
 }
 nav a:hover{
     text-decoration: underline;
@@ -42,15 +62,7 @@ nav a:hover{
 nav a:focus{
     text-decoration: underline;
 }
-nav li:first-child{
-    background-color: antiquewhite;
-    font-size: x-large;
-    border: 6px black double;
-    border-radius: 15px;
-    display: inline-block;
-    padding: 15px;
-    width:200px;
-} 
+
 /* styling skip to main content link */
 .skip a{
     position: absolute; 
@@ -74,9 +86,14 @@ h1{
     background-clip: text;
     -webkit-background-clip: text;
 }
-h2{
-    font-family:"copperplate" ;
+
+h2,h3{
     text-align: center;
+    font-family:"copperplate" ;
+}
+
+h3{
+    font-size:x-large;
 }
 /* styling all images in flex containers */
 .beachpics{
@@ -145,21 +162,91 @@ body{
     background: lightblue;
 }
 /*styling footer*/
-footer{
+
+* {
+    box-sizing: border-box;
+}
+  
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family:"copperplate" ;
+}
+  
+input[type=submit] {
+    background-color: rgba(0, 0, 139, 0.654);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100%
+}
+  
+input[type=submit]:hover {
+    background-color: darkblue;
+}
+  
+.container {
+    border-radius: 5px;
+    background-color: rgb(232, 249, 255);
+    padding: 20px;
+}
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+p{
     text-align: center;
+    font-family:"copperplate" ;
+}
+
+@media screen and (max-width:800px){
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 /*tablet view*/
-@media screen and (min-width:600px){
+@media screen and (min-width:800px){
     header{
         display: flex;
         /* flex-direction: row; */
-        justify-content: center;
+        justify-content:center;
+    }
+
+    ul{
+        padding-inline-start: 0px;
     }
 
     nav li{
         margin: 1%;
         padding: 10px;
-        width: 160px;
+        width: 150px;
     }
 
     nav li:first-child{
@@ -168,23 +255,51 @@ footer{
 
     .nav_links{
         display: flex;
+        justify-content: center;
     }
     h2{
         text-align: left;
     }
     body{
-        background: linear-gradient(lightblue,pink);
+        background: linear-gradient(rgb(217, 217, 251),pink);
     }
     nav li:first-child:hover{
         box-shadow: 10px 5px;
-        width:220px;
+        width:190px;
         padding: 10px;
+    }
+
+    nav li:hover{
+        width: 160px;
+    }
+
+    input[type=submit]:hover {
+        background-color: rgb(255, 100, 126);
+    }
+
+    input[type=submit]{
+        background-color: rgb(249, 136, 155);
+        justify-content: center;
+        width: 190px;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: rgb(250, 244, 255);
     }
 }
 @media screen and (min-width:1200px){
+    body{
+        background: linear-gradient(lightblue,pink);
+    }
     h2{
         text-align: center;
     }
+
+    ul{
+        padding-inline-start: 0px;
+    }
+    
     .beachpics{
         display:grid;
         grid-template-columns: repeat(3,1fr);
@@ -225,9 +340,36 @@ footer{
         background-clip: text;
         -webkit-background-clip: text;
     }
-    header{
+
+    input[type=submit]:hover {
+        background-color: rgb(255, 100, 126);
+    }
+
+    input[type=submit]{
+        background-color: rgb(249, 136, 155);
+        justify-content: center;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: rgb(251, 243, 244);
+    }
+
+    .col-75 {
+        float: left;
+        width: 100%;
+        margin-top: 6px;
+    }
+
+    /* header{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    } */
+}
+
+@media (prefers-reduced-motion: reduce){
+    nav li:hover{
+        transition: none;
     }
 }

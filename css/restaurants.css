@@ -17,20 +17,51 @@
     position: relative;
     border: 10px tan double;
 }
-.gallery img:nth-child(8){
-    align-content:center;
+
+nav{
+    align-items: center;
 }
 /*styling the nav*/
+
 nav li{
     background-color: pink;
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
+    padding: 20px; 
+    height: 17px;
+    width:200px;
+    margin: 2%;
+    list-style: none;
+    transition: background-color 2s ease-out 100ms;
+} 
+
+nav li:hover{
+    box-shadow: 5px 5px;
+    width:210px;
+    background-color: rgb(254, 120, 142);
+}
+
+nav li:nth-child(3){
+    background-color: antiquewhite;
+    font-size: larger;
+    border: 6px black double;
+    border-radius: 15px;
     display: inline-block;
     padding: 10px;
-    width:18%;
+    height: 50px;
+    width:20%;
     margin:1%;
 }
+
+nav li:nth-child(3):hover{
+    box-shadow: 10px 5px;
+    background-color: rgb(249, 208, 150);
+    padding: 13px;
+    width:225px;
+    height: 53px;
+}
+
 nav a:visited{
     color:black;
 }
@@ -50,21 +81,7 @@ nav a:hover{
 nav a:focus{
     text-decoration: underline;
 }
-nav li:nth-child(3){
-    background-color: antiquewhite;
-    font-size: x-large;
-    border: 3px black dashed;
-    border-radius: 15px;
-    display: inline-block;
-    padding: 15px;
-    width:20%;
-    margin:1%;
-}
-nav li:hover{
-    box-shadow: 10px 5px;
-    width:100px;
-    height:100px;
-}
+
 /* styling skip to main content link */
 .skip a{
     position: absolute; 

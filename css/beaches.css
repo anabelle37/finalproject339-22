@@ -11,29 +11,61 @@
 .gallery img{
     width: 90%;
     margin: 4.5%;
-    justify-self: stretch;
+    justify-self: center;
     align-self: stretch;
 }
 .gallery img:hover{
     position: relative;
     border: 10px tan double;
 }
+
+ul{
+    padding-inline-start: 0px;
+}
 /*styling the nav*/
-header{
-    display: flex;
-    flex-direction: column;
+nav{
     align-items: center;
 }
+
 nav li{
     background-color: pink;
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
+    padding: 20px; 
+    height: 17px;
+    width:200px;
+    margin: 2%;
+    list-style: none;
+    transition: background-color 2s ease-out 100ms;
+} 
+
+nav li:hover{
+    box-shadow: 5px 5px;
+    width:210px;
+    background-color: rgb(254, 120, 142);
+}
+
+nav li:nth-child(2){
+    background-color: antiquewhite;
+    font-size: larger;
+    border: 6px black double;
+    border-radius: 15px;
     display: inline-block;
     padding: 10px;
-    width:18%;
+    height: 50px;
+    width:20%;
     margin:1%;
 }
+
+nav li:nth-child(2):hover{
+    box-shadow: 10px 5px;
+    background-color: rgb(249, 208, 150);
+    padding: 13px;
+    width:225px;
+    height: 53px;
+}
+
 nav a:visited{
     color:black;
 }
@@ -53,22 +85,7 @@ nav a:hover{
 nav a:focus{
     text-decoration: underline;
 }
-nav li:nth-child(2){
-    background-color: antiquewhite;
-    font-size: x-large;
-    border: 3px black dashed;
-    border-radius: 15px;
-    display: inline-block;
-    padding: 15px;
-    width:20%;
-    margin:1%;
-}
-nav li:hover{
-    box-shadow: 10px 5px;
-    /* width:230px; */
-    width: 100px;
-    height:auto;
-}
+
 /* styling skip to main content link */
 .skip a{
     position: absolute; 
@@ -96,22 +113,32 @@ body{
     background: lavender;
 }
 /*tablet view*/
-@media screen and (min-width:600px){
-    header{
+@media screen and (min-width:600px){ 
+    /* header{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    } */
+
+    nav{
+        align-items: center;
+        overflow: hidden;
     }
     .navigation_links{
-        display: flex;
+        align-items:center;
     }
     body{
         background: linear-gradient(lightblue,pink);
     }
-    nav li{
+
+    ul{
+        padding-inline-start: 0px;
+    }
+    
+    /* nav li{
         width: 100px;
         height: auto;
-    }
+    } */
     nav li:hover{
         box-shadow: 10px 5px;
         width:200px;
