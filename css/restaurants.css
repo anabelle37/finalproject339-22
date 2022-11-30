@@ -1,6 +1,6 @@
 .gallery{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     /* align-items: stretch; */
     justify-content: stretch;
     align-items: stretch;
@@ -173,6 +173,9 @@ h1{
         width:200px;
         height:auto;
     }
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width:1150px){
@@ -206,6 +209,9 @@ h1{
         padding-top: 10px;
         width:245px;
         height: 47px;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 

@@ -1,6 +1,6 @@
 .gallery{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     /* align-items: stretch; */
     justify-content: space-evenly;
     /* justify-items: center; */
@@ -153,6 +153,9 @@ h1{
         padding-inline-start: 0px;
         padding-inline-end: 0px;
     }
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
@@ -187,6 +190,9 @@ h1{
         padding-top: 10px;
         width:245px;
         height: 47px;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
