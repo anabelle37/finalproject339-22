@@ -26,14 +26,13 @@ ul{
 nav{
     align-items: center;
 }
-
 p{
     text-align: center;
     font-family:"copperplate" ;
 }
 nav li{
     background-color: pink;
-    font-size: smaller;
+    /* font-size: smaller; */
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
@@ -54,17 +53,16 @@ nav li:hover{
 
 nav li:nth-child(2){
     background-color: antiquewhite;
-    font-size:medium;
+    /* font-size:medium; */
     border: 6px black double;
     border-radius: 15px;
     display: inline-block;
     padding: 10px;
     /* padding-top: 20px; */
-    height: 50px;
-    width:20%;
+    /* height: 50px;
+    width:20%; */
     /* margin:1%; */
 }
-
 nav li:nth-child(2):hover{
     box-shadow: 10px 5px;
     background-color: rgb(249, 208, 150);
@@ -85,6 +83,11 @@ nav a:hover{
 }
 nav a:focus{
     text-decoration: underline;
+}
+.navigation_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* styling skip to main content link */
@@ -136,10 +139,11 @@ body{
         font-size: larger;
         border-radius: 15px;
         display: inline-block;
+    
         padding: 6px;
         /* padding-top: 20px; */
-        height: 70px;
-        width:20%;
+        /* height: 70px;
+        width:20%; */
         /* margin:1%; */
     }
     
@@ -156,7 +160,9 @@ body{
         overflow: hidden;
     }
     .navigation_links{
-        align-items:center;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
     }
 
     ul{

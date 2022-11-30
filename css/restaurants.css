@@ -34,7 +34,7 @@ nav{
 /*styling the nav*/
 
 nav li{
-    font-size:small;
+    /* font-size:small; */
     background-color: pink;
     text-align: center;
     border: 2px solid black;
@@ -62,8 +62,8 @@ nav li:nth-child(3){
     display: inline-block;
     padding: 10px;
     /* padding-top: 20px; */
-    height: 50px;
-    width:20%;
+    /* height: 50px;
+    width:20%; */
     margin:1%;
 }
 
@@ -90,6 +90,11 @@ nav a:hover{
 }
 nav a:focus{
     text-decoration: underline;
+}
+.navigation_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* styling skip to main content link */
@@ -139,8 +144,8 @@ h1{
         display: inline-block;
         padding: 6px;
         /* padding-top: 20px; */
-        height: 70px;
-        width:20%;
+        /* height: 70px;
+        width:20%; */
         /* margin:1%; */
     }
     
@@ -158,6 +163,11 @@ h1{
     }
     .navigation_links{
         align-items:center;
+    }
+    .navigation_links{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
     }
 
     ul{

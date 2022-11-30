@@ -30,7 +30,7 @@ ul{
 nav li{
     background-color: pink;
     text-align: center;
-    font-size: small;
+    /* font-size: small; */
     border: 2px solid black;
     border-radius: 15px;
     display: inline-block;
@@ -64,8 +64,8 @@ nav li:nth-child(4){
     border-radius: 15px;
     /* display: inline-block; */
     padding: 10px;
-    height: 42px;
-    width:20%;
+    /* height: 42px;
+    width:20%; */
     margin:1%;
 }
 nav li:hover{
@@ -98,6 +98,11 @@ h1{
     font-family:"copperplate" ;
     color: blue;
 }
+.navigation_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 @media screen and (min-width:800px){ 
@@ -124,8 +129,8 @@ h1{
         display: inline-block;
         padding: 6px;
         /* padding-top: 20px; */
-        height: 70px;
-        width:20%;
+        /* height: 70px;
+        width:20%; */
         /* margin:1%; */
     }
     
@@ -143,7 +148,11 @@ h1{
     .navigation_links{
         align-items:center;
     }
-
+    .navigation_links{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+    }
     nav li:hover{
         box-shadow: 10px 5px;
         width:200px;
