@@ -14,17 +14,32 @@
     position: relative;
     border: 10px tan double;
 }
+p{
+    text-align: center;
+    font-family:"copperplate" ;
+}
 
+body{
+    background-color: lightblue;
+}
+
+ul{
+    padding-inline-start: 0px;
+}
 /*styling the nav*/
 nav li{
     background-color: pink;
     text-align: center;
+    font-size: small;
     border: 2px solid black;
     border-radius: 15px;
     display: inline-block;
-    padding: 10px;
-    width:18%;
-    margin:1%;
+    padding: 15px;
+    height: 30px;
+    width:200px;
+    margin: 2%;
+    list-style: none;
+    transition: background-color 2s ease-out 100ms;
 }
 nav a:visited{
     color:black;
@@ -35,10 +50,7 @@ nav a{
     font-weight: bold;
     font-family:"copperplate" ;
 }
-nav a:active{
-    color:blue;
-    font-size: larger;
-}
+
 nav a:hover{
     text-decoration: underline;
 }
@@ -47,23 +59,25 @@ nav a:focus{
 }
 nav li:nth-child(4){
     background-color: antiquewhite;
-    font-size: x-large;
-    border: 3px black dashed;
+    font-size: medium;
+    border: 6px black double;
     border-radius: 15px;
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px;
+    height: 42px;
     width:20%;
     margin:1%;
 }
 nav li:hover{
-    box-shadow: 10px 5px;
-    width:100px;
-    height:100px;
+    box-shadow: 5px 5px;
+    width:210px;
+    background-color: rgb(254, 120, 142);
 }
 nav li:nth-child(4):hover{
+    background-color: rgb(249, 208, 150);
     box-shadow: 10px 5px;
-    width:250px;
-    height:25px;
+    width:230px;
+    height:40px;
 }
 /* styling skip to main content link */
 .skip a{
@@ -83,4 +97,102 @@ h1{
     text-align: center;
     font-family:"copperplate" ;
     color: blue;
+}
+
+
+@media screen and (min-width:800px){ 
+
+    body{
+        background: linear-gradient(rgb(217, 217, 251),pink);
+    }
+    nav li{
+        width: 230px;
+        padding: 10px;
+        height: 40px;
+        font-size: large;
+    }
+
+    nav li:hover{
+        width: 220px;
+        padding: 15px;
+        height: 40px;
+    }
+
+    nav li:nth-child(4){
+        font-size: larger;
+        border-radius: 15px;
+        display: inline-block;
+        padding: 6px;
+        /* padding-top: 20px; */
+        height: 70px;
+        width:20%;
+        /* margin:1%; */
+    }
+    
+    nav li:nth-child(4):hover{
+        box-shadow: 10px 5px;
+        padding: 15px;
+        width:180px;
+        height: 55px;
+    }
+
+    nav{
+        align-items: center;
+        overflow: hidden;
+    }
+    .navigation_links{
+        align-items:center;
+    }
+
+    nav li:hover{
+        box-shadow: 10px 5px;
+        width:200px;
+        height:auto;
+    }
+    ul{
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
+    }
+}
+
+
+@media screen and (min-width:1150px){
+    body{
+        background: linear-gradient(lightblue,pink);
+    }
+
+    nav li:hover{
+        box-shadow: 10px 5px;
+        width:200px;
+    }
+
+    nav li{
+        width: 200px;
+        padding-bottom: 15px;
+    }
+    nav li:nth-child(4){
+        font-size: x-large;
+        border-radius: 15px;
+        display: inline-block;
+        padding: 15px;
+        padding-top: 10px;
+        height: 45px;
+        width:20%;
+        /* margin:1%; */
+    }
+    
+    nav li:nth-child(4):hover{
+        box-shadow: 10px 5px;
+        padding: 15px;
+        padding-top: 10px;
+        width:245px;
+        height: 47px;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce){
+    nav li:hover{
+        transition: none;
+    }
 }

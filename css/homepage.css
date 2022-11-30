@@ -246,7 +246,7 @@ p{
     nav li{
         margin: 1%;
         padding: 10px;
-        width: 150px;
+        width: 170px;
     }
 
     nav li:first-child{
@@ -270,7 +270,7 @@ p{
     }
 
     nav li:hover{
-        width: 160px;
+        width: 175px;
     }
 
     input[type=submit]:hover {
@@ -288,10 +288,15 @@ p{
         background-color: rgb(250, 244, 255);
     }
 }
-@media screen and (min-width:1200px){
+@media screen and (min-width:1150px){
     body{
         background: linear-gradient(lightblue,pink);
     }
+
+    nav li{
+        width: 170px;
+    }
+
     h2{
         text-align: center;
     }
