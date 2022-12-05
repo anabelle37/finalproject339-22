@@ -281,16 +281,17 @@ p{
         background-color: rgb(249, 136, 155);
         justify-content: center;
         width: 190px;
+        color:black;
     }
 
     .container {
         border-radius: 5px;
-        background-color: rgb(250, 244, 255);
+        background-color: rgb(249, 244, 253);
     }
 }
 @media screen and (min-width:1150px){
     body{
-        background: linear-gradient(lightblue,pink);
+        background: linear-gradient(lightblue,rgb(249, 93, 119));
     }
 
     nav li{
@@ -347,11 +348,12 @@ p{
     }
 
     input[type=submit]:hover {
-        background-color: rgb(255, 100, 126);
+        background-color: rgb(247, 112, 135);
     }
 
     input[type=submit]{
-        background-color: rgb(249, 136, 155);
+        color: black;
+        background-color: rgb(243, 147, 163);
         justify-content: center;
     }
 
